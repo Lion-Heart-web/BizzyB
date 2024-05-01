@@ -3,15 +3,11 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 /* CodeStitch Root and Helpers */
-/* F5EEE6
-FFF8E3
-F3D7CA
-E6A4B4 */
 @media only screen and (min-width: 0em) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #e6a4b4;
-    --primaryLight: #e6a4b4;
+    --primary: #E6A4B4;
+    --primaryLight: #E6A4B4;
     --secondary: #F3D7CA;
     --secondaryLight: #F3D7CA;
     --headerColor: #1a1a1a;
@@ -91,7 +87,7 @@ E6A4B4 */
     content: "";
     width: 0;
     height: 100%;
-    background-color: #F3D7CA;
+    background-color: var(--secondary);
     opacity: 1;
     display: block;
     position: absolute;
@@ -806,10 +802,10 @@ E6A4B4 */
     filter: grayscale(1) brightness(10005);
   }
   body.dark-mode #cs-navigation .cs-li-link.cs-active {
-    color: var(--secondary);
+    color: var(--primary);
   }
   body.dark-mode #cs-navigation .cs-li-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
 }
 /*-- -------------------------- -->

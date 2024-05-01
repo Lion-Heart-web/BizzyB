@@ -9,10 +9,10 @@
     // Website colors
     :root {
         /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-        --primary: #ff6a3e;
-        --primaryLight: #ffba43;
-        --secondary: #ffba43;
-        --secondaryLight: #ffba43;
+        --primary: #E6A4B4;
+        --primaryLight: #E6A4B4;
+        --secondary: #F3D7CA;
+        --secondaryLight: #F3D7CA;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -87,9 +87,10 @@
         z-index: 1;
         transition: color 0.3s;
         transition-delay: 0.1s;
+        border-radius: 1.5rem;
 
         &:hover {
-            color: #fff;
+            color: #000;
             &:before {
                 width: 100%;
             }
@@ -101,7 +102,7 @@
             //Transition properties
             width: 0;
             height: 100%;
-            background-color: #000;
+            background-color: var(--secondary);
             opacity: 1;
             display: block;
             position: absolute;
@@ -109,6 +110,7 @@
             left: 0;
             z-index: -1;
             transition: width 0.3s;
+            border-radius: 1.5rem;
         }
     }
 }
@@ -844,10 +846,10 @@
       filter: grayscale(1) brightness(10005);
     }
     body.dark-mode #cs-navigation .cs-li-link.cs-active {
-      color: var(--secondary);
+      color: var(--primary);
     }
     body.dark-mode #cs-navigation .cs-li-link:hover {
-      color: var(--secondary);
+      color: var(--primary);
     }
   }
                                                          
