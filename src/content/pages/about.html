@@ -28,48 +28,52 @@ eleventyNavigation:
         </picture>
 
     </section>
+<!-- ============================================ -->
+<!--                Side by Side                  -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+<section id="sbs-1883">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../assets/images/about-desktop.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../assets/images/about-desktop.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/about-desktop.webp" alt="about us intro" width="324" height="467">
+            </picture>
+            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines-2.svg" alt="graphic" width="208" height="203" aria-hidden="true">
+            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/ball.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+            <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-blob.svg" alt="graphic" width="379" height="394" aria-hidden="true">
+            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/leaf2.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+            <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-lines.svg" alt="graphic" width="189" height="208" aria-hidden="true">
+            {# <div class="cs-info">
+                <p class="cs-info-text">
+                    <span class="cs-bold">Elected Secretary</span>
+                    of Orange County Dermatology Society 2022-2024
                 </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+            </div> #}
         </div>
-    </section>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">About us</span>
+                <h2 class="cs-title">Welcome to Our Stitch Skin Dermatology</h2>
+            </div>
+            <p class="cs-text-large">
+                Stitch Skin Dermatology & Aesthetics is a California-based professional corp start-up that is redefining the way dermatology and medical aesthetics is practiced and delivered.
+            </p>
+            <p class="cs-text">
+                We are seeing a new crop of medical practices emerge that are reimagining the patient's experience with traditional healthcare (e.g. One Medical for Primary Care, Forward for Preventative Care, KindBody for Fertility, Tia for Women's Health), however we can't say the same for Dermatology and Medical Aesthetics.
+            </p>
+            <p class="cs-text">
+                Our objective with Stitch Skin is to build a truly patient-centric dermatology experience, from initial awareness to patient check-in to consultation to billing and post-visit (and everything in between), building lasting relationships and leveraging seamless technology to maximize patient satisfaction.
+            </p>
+            <a href="/contact" class="cs-button-solid">Book an Appointment</a>
+        </div>
+    </div>
+</section>
+                                
+                                
 
     {% include 'components/cta.html' %}
 
