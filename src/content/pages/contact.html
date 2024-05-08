@@ -1,6 +1,6 @@
 ---
-title: 'Contact'
-description: 'Ready to start planning your dream wedding? Contact Primrose today to discuss your wedding or event needs. Our team is here to assist with event design, planning, and coordination. Reach out now for personalized service and expert advice!'
+title: 'Contact Primrose Weddings | Book Your Event Consultation'
+description: 'Get in touch with Primrose Weddings & Events today to start planning your dream wedding or event with expert planners.'
 preloadImg: '../../assets/images/about-landing-section-desktop.webp'
 permalink: 'contact/'
 ---
@@ -8,6 +8,7 @@ permalink: 'contact/'
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    <script defer src="/assets/js/faq.js"></script>
     <link rel="stylesheet" href="/assets/css/contact.css">
 {% endblock %}
 
@@ -34,11 +35,10 @@ permalink: 'contact/'
         <div class="cs-container">
             <form id="cs-form" name="Contact Form" method="post" data-netlify="true">
                 <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">Let’s Chat About Your Event!</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
+                        Have questions, or are you ready to start planning your upcoming wedding or event? Let’s talk! We’re here to help make your dream day a reality. Fill out the form below or reach out directly via email or phone. We look forward to hearing from you!                    </p>
                 </div>
                 <label>
                     Name
@@ -88,8 +88,104 @@ permalink: 'contact/'
                     <source media="(min-width: 601px)" srcset="../../assets/images/contact-us-desktop.webp">
                     <img aria-hidden="true" decoding="async" src="../../assets/images/contact-us-desktop.webp" alt="primrose quote" loading="lazy" width="2500" height="1667">
                 </picture>
-
             </div>
         </div>
     </section>
+
+    <!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-326">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ’s</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="faq-content">Here are some of the most common questions we get about Southern California wedding services. Don’t see your question listed? Let us know - we’re happy to help! </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What services does Primrose Weddings & Events offer?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We specialize in wedding planning, event design, event coordination, and more. Our services are tailored to meet the unique needs of each client, ensuring a personalized and unforgettable experience.                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I start planning an event with you?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Simply contact us via our website, email, or phone. We recommend scheduling a free consultation where we can discuss your vision and how we can help bring it to life.                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you handle events outside of Southern California?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we are happy to travel and manage events outside our primary location. Please contact us to discuss your event’s specific needs and location.                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What makes Primrose Weddings & Events different from other event planners?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our commitment to personalization and attention to detail sets us apart. We believe in creating events that are as unique as our clients, and our small team ensures intimate, dedicated service.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer packages? What do they include?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we offer various packages ranging from month-of coordination to full-service planning. Details and pricing vary based on the scope of the event and client needs, and we provide customized quotes during our initial consultation.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is the average cost to plan a wedding with your services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Costs can vary significantly based on the size of the event and the level of service required. Our Full Planner package, for example, is 14% of the wedding budget. We can discuss more specific pricing during your consultation.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How far in advance should I book your services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We typically recommend booking as early as possible, especially for wedding planning and design services, to ensure availability and ample time for perfecting all details.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you have a portfolio I can review?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we do! Please visit our website’s portfolio to view past events we’ve planned and designed. You can also follow us on social media for more updates and examples of our work.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
 {% endblock %}
