@@ -81,7 +81,7 @@
     width: 100%;
     /* 32px - 40px */
     margin: 0 0 clamp(2rem, 4vw, 2.5rem) 0;
-    color: var(--bodyTextColor);
+    color: black;
   }
   #hero-1469 .cs-button-solid {
     font-size: 1rem;
@@ -207,8 +207,9 @@
 /* Large Desktop Parallax Effect - 1600px */
 @media only screen and (min-width: 100rem) {
   #hero-1469 .cs-background {
-    background: url("../images/landing-page-hero.jpg");
+    background: url("../images/landing-hero-version-2.webp");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
