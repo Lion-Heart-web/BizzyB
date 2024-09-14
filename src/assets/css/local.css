@@ -555,5 +555,16 @@
     color: var(--primaryLight);
   }
 }
-
-/*# sourceMappingURL=local.css.map */
+/* home page button alignment */
+@media only screen and (min-width: 0em) {
+  .align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .align-center {
+    align-items: baseline;
+  }
+}
